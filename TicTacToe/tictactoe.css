@@ -1,0 +1,29 @@
+<style type="text/css">
+	body {
+	 color:black;
+	 background-color:white;
+	 font-family:Tahoma,Verdana,Helvetica,Arial,sans-serif;
+	}
+	.cell {
+	 background-color:red;
+	 color:black;
+	 font-size:2cm;
+	 font-family:Courier New,Courier,monospaced;
+	 font-weight:bold;
+	 width:65px;
+	 min-width:65px;
+	}
+	input.cell {
+	 border:none;
+	 width:2cm;
+	 vertical-align:bottom;
+	}
+	td.cell {
+	 border:thick grey outset;
+	}
+	.board {
+	 border:thin black ridge;
+	 background-color:grey;
+	 margin-right:1cm;
+	}
+	</style>

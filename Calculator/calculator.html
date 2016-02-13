@@ -1,0 +1,53 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link href="calcCSS.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <input type="text" id="output" style="width:400px; height: 200px"></input>
+ <table border="1" style="width: 400px">
+  <tr id="top">
+    <td><input type="button" id="mc" value="mc" onclick="memChange('-')"></input></td>
+    <td></td>
+    <td><input type="button" id="c" value="c" onclick="clr(0)"></td>
+    <td><input type="button" id="ac" value="ac" onclick="clr(1)"></td>
+    <td><input type="button" id="divide" value="/" onclick="operate('/')"></td>
+  </tr>
+  <tr id = "789">
+    <td><input type="button" id="mr" value="mr" onclick="memChange('+')"></td>
+    <td><input type="button" id="7" value="7" onclick="update(7)"></td>
+    <td><input type="button" id="8" value="8" onclick="update(8)"></td>
+    <td><input type="button" id="9" value="9" onclick="update(9)"></td>
+    <td><input type="button" id="multiply" value="*" onclick="operate('*')"></td>
+  </tr>
+  <tr id = "456">
+    <td><input type="button" id="m+" value="m+" onclick="memUse('+')"></td>
+    <td><input type="button" id="4" value="4" onclick="update(4)"></td>
+    <td><input type="button" id="5" value="5" onclick="update(5)"></td>
+    <td><input type="button" id="6" value="6" onclick="update(6)"></td>
+    <td><input type="button" id="subtract" value="-" onclick="operate('-')"></td>
+  </tr>
+  <tr id = "123">
+    <td><input type="button" id="m-" value="m-" onclick="memUse('-')"></td>
+    <td><input type="button" id="1" value="1" onclick="update(1)"></td>
+    <td><input type="button" id="2" value="2" onclick="update(2)"></td>
+    <td><input type="button" id="3" value="3" onclick="update(3)"></td>
+    <td><input type="button" id="plus" value="+" onclick="operate('+')"></td>
+  </tr>
+  <tr id = "0equals">
+    <td></td>
+    <td><input type="button" id="0" value="0" onclick="update(0)"></td>
+    <td></td>
+    <td></td>
+    <td><input type="button" id="enter" value="=" onclick="eval()"></td>
+  </tr>
+</table> 
+<div id="div"></div>
+
+<script src="calcJS.js">
+</script>
+
+</body>
+</html> 
